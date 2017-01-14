@@ -21,9 +21,8 @@ plt.show()
 #predict values
 x_values_test=np.array([6.1101,5.5277,8.5186])
 y_values_test=np.array([17.592,9.1302,13.662])
-print("Mean squared error: %.2f"
+print("Mean Squared Error: %.2f"
 % np.mean((body_reg.predict(x_values_test.reshape(-1,1)) - y_values_test.reshape(-1,1)) ** 2))
 for i in range(0,len(x_values_test)):
 	print("Error of test #%d: %.2f"
 	% (i, (body_reg.predict(x_values_test[i] - y_values_test[i]))))
-
